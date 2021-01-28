@@ -15,23 +15,23 @@ export GCC_VERSION=9.X.0
 ##- Customize variable this to name the installation; the custom name is
 ##  displayed when a user invokes gcc/g++ with the -v or --version flags.
 ##
-export GCC_PKG_NAME='KEWB Computing Build'
+export GCC_PKG_NAME='conda_from_scratch compilers'
 
 ##- Customize this variable to define the middle substring of the GCC build
 ##  triple.
 ##
-export GCC_CUSTOM_BUILD_STR=kewb
+export GCC_CUSTOM_BUILD_STR=cfs
 
 ##- Customize this variable to specify where this version of GCC will be
 ##  installed.
 ##
-export GCC_INSTALL_PREFIX=/usr/local/gcc/$GCC_VERSION
+export GCC_INSTALL_PREFIX=/opt/cfs
 
 ##- Customize this variable to specify where the scripts that set various
 ##  important environment variables for using this version of GCC will be
 ##	installed.
 ##
-export GCC_INSTALL_SCRIPTS_PREFIX=/usr/local/bin
+export GCC_INSTALL_SCRIPTS_PREFIX=/opt/cfs
 
 ##- Customize this variable to specify the installation's time stamp.
 ##
