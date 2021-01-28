@@ -19,6 +19,7 @@ source ./gcc-build-vars.sh
 cd $GCC_BLD_DIR
 echo -n "Checking for configuration log in $GCC_BLD_DIR..."
 
+rm config.log config.cache
 if [ ! -e config.log ]
 then
     echo ""
@@ -62,7 +63,11 @@ then
             --disable-multilib                  \
             --disable-install-libiberty         \
             --disable-werror                    \
-            --with-system-zlib
+            CPPFLAGS="${CPPFLAGS}"  \
+            CFLAGS="${CFLAGS}"  \
+            CXXFLAGS="${CXXFLAGS}"  \
+            LDFLAGS="${LDFLAGS}"
+
     fi
 
     echo "GCC configuration completed!"
