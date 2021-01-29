@@ -57,8 +57,8 @@ then
             --enable-__cxa_atexit               \
             --enable-clocale=gnu                \
             --enable-languages=c,c++            \
-            --enable-lto                        \
-            --enable-bootstrap                  \
+            --disable-lto                       \
+            --disable-bootstrap                 \
             --disable-nls                       \
             --disable-multilib                  \
             --disable-install-libiberty         \
